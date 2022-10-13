@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Bank of Kuldeep</title>
+</head>
+
+<body onload="initialLoadTransactionHistory()" class="text-center">
+
+    <script src="./transactionHistory/transactionHistory.js"></script>
+    <script src="./constants/constant.js"></script>
+    <h1 style="text-align: center;">Transaction History</h1>
+    <button id="gobackdshbrd" onclick="goBackToDashboard()">Go Back</button>
+
+    <div id="txnhstry" align="center">
+        <div id="greetUser" style="text-align: center;"></div>
+        <div id="notxnhst" style="text-align: center;"></div>
+        <div id="totalBalance" style="text-align: center;"></div>
+        <table border="1" id="txnhsttable">
+            <!-- <tr>
+                <td>Id</td>
+                <td>Transaction Type</td>
+                <td>Amount</td>
+                <td>Date</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>CREDIT</td>
+                <td>500</td>
+                <td>27-09-2022</td>
+            </tr> -->
+        </table>
+    </div>
+</body>
+
+</html>

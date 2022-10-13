@@ -1,0 +1,44 @@
+<html lang="en">
+<link rel="stylesheet" href="./dashboard/dashboard.css">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bank of Kuldeep</title>
+</head>
+
+<body onload="initialLoadDashboard()" class="text-center">
+
+  <script src="./dashboard/dashboard.js"></script>
+  <script src="./constants/constant.js"></script>
+  <script src="./login/login.js"></script>
+
+  <div id="greetUser" style="text-align: center;"></div>
+
+  <div style="text-align: center;">
+
+    <div id="userAccountBalance"></div>
+
+    <div>
+      <input type="number" id="depositAmount" placeholder="Enter Amount">
+      <button class="submit" onclick="credit()">Deposit</button>
+    </div>
+
+    <div style="padding-top: 20;">
+      <input type="number" id="withdrawAmount" placeholder="Enter Amount">
+      <button class="submit" onclick="debit()">Withdraw</button>
+    </div>
+
+
+  </div>
+
+  <div style="text-align: center; padding-top: 100;">
+    <button id="txnhst" onclick="openTransactionHistory()">Transaction History</button>
+  </div>
+
+  <div style="text-align: center; padding-top: 100;">
+    <button id="logout" onclick="logout()">Log Out</button>
+  </div>
+
+</body>
+
+</html>
