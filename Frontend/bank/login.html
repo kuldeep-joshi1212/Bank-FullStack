@@ -1,4 +1,5 @@
 <html lang="en">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="./login/login.css">
 
 <head>
@@ -10,12 +11,17 @@
 
   <script src="./login/login.js"></script>
   <script src="./constants/constant.js"></script>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="/bank/login/favicon.ico" width="30" height="30" alt="">
+    </a>
+  </nav>
 
   <h1 style="text-align: center;">Bank of Kuldeep</h1>
   <h2 style="text-align: center; padding-top: 10;">Sign in to your wallet</h2>
 
   <div style="text-align: center;">
-    <input type="email" id="email" placeholder="email@email.com">
+    <input type="email" id="email" placeholder="email">
     <label for="email"></label>
 
     <input type="password" id="password" placeholder="Password">
