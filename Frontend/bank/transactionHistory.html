@@ -4,34 +4,33 @@
 <head>
     <meta charset="utf-8" />
     <title>Bank of Kuldeep</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./transactionHistory/transactionHistory.css">
 </head>
 
 <body onload="initialLoadTransactionHistory()" class="text-center">
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="http://127.0.0.1:5500/bank/dashboard.html">
+          <img src="/bank/login/favicon.ico" width="30" height="30" alt="Dashboard">
+        </a>
+      </nav>
+
 
     <script src="./transactionHistory/transactionHistory.js"></script>
     <script src="./constants/constant.js"></script>
     <h1 style="text-align: center;">Transaction History</h1>
-    <button id="gobackdshbrd" onclick="goBackToDashboard()">Go Back</button>
-
+    
+    
+    
     <div id="txnhstry" align="center">
         <div id="greetUser" style="text-align: center;"></div>
         <div id="notxnhst" style="text-align: center;"></div>
         <div id="totalBalance" style="text-align: center;"></div>
         <table border="1" id="txnhsttable">
-            <!-- <tr>
-                <td>Id</td>
-                <td>Transaction Type</td>
-                <td>Amount</td>
-                <td>Date</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>CREDIT</td>
-                <td>500</td>
-                <td>27-09-2022</td>
-            </tr> -->
+            
         </table>
     </div>
+    <button id="gobackdshbrd" onclick="goBackToDashboard()">Go Back</button>
 </body>
 
 </html>

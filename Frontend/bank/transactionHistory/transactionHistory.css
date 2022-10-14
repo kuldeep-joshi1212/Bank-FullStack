@@ -7,10 +7,14 @@ h2{
     font-size: larger;
 }
 
-button{
-    border-radius: 10px;
+table{
+    background-color: #FFE6F7;
+    
+}
+tr,td{
+    border-radius: 5px;
 }
 
-input{
+button{
     border-radius: 10px;
 }
